@@ -1,4 +1,7 @@
-index-state: 2022-03-23T00:00:00Z
+-- Upstream index-state
+--index-state: 2022-03-23T00:00:00Z
+-- index-state first used with this fork
+--index-state: 2022-12-25T11:36:12Z
 
 packages:
   tools/
@@ -9,3 +12,6 @@ packages:
   gtk/
 
 write-ghc-environment-files: never
+
+allow-newer: cairo:text, glib:text, gtk3:text, pango:text
+    , pango:Cabal, gtk3:Cabal, glib:Cabal, gio:Cabal, cairo:Cabal
